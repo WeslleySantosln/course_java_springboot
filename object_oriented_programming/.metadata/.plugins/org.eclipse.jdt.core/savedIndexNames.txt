@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Weslley Santos\Desktop\AULA DE PROGRAMACAO\class_java_2\class\object_oriented_programming\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1201326162.index
+801999160.index
+3977293965.index

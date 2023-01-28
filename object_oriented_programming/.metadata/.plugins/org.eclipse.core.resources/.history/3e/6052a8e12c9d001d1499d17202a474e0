@@ -1,0 +1,21 @@
+package a_triangle_calculator;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Interface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		double xA, xB, xC, yA, yB, yC;
+		
+		System.out.println("Enter the measures of triangle X: ");
+		xA = sc.nextDouble();
+		
+
+	}
+
+}

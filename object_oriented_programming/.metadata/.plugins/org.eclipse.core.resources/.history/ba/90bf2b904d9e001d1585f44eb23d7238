@@ -1,0 +1,11 @@
+package entites;
+
+public class Triangle {
+	public double a, b, c, p, area;
+	
+	
+	
+	public void ranger() {
+		System.out.printf("O valor da área é %.4f%n", area);
+	}
+}
