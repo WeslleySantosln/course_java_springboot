@@ -10,44 +10,54 @@ public class program {
 	public static void main(String[] args) {
 		
 		String r = "S";
+		
 		Locale.setDefault(Locale.US);
+		
 		Scanner sc = new Scanner(System.in);
+			
 		
 		do {
-				
-		Product product = new Product();
 		
-		
+			
 		System.out.println("Enter product data: ");
 		System.out.println("Name: ");
-		product.name = sc.nextLine();
+		String name = sc.nextLine();
 		
 		System.out.println("Prince: ");
-		product.price = sc.nextDouble();
+		double price = sc.nextDouble();
 		
-		System.out.println("Quantity: ");
-		product.quantity = sc.nextInt();
+				
+		Product product = new Product(name, price);
 		
 		
 		System.out.println("Product data: " + product);
+		System.out.println("--------------------------------------------------------");
 		
-		System.out.println();
+		System.out.println("Do you want to add some products? [Y-N]");
+		r = sc.next();
+		
+		if(r.equalsIgnoreCase("y")) {
+		
 		System.out.println("Enter the number of products to be added in sotck: ");
 		product.addProducts(sc.nextInt());
+		System.out.println("-------------------------------------------------------");
 		
+		}
 		
-		System.out.println();
+		System.out.println("Do you want to removed some products? [Y-N]");
+		r = sc.next();
+		
+		if(r.equalsIgnoreCase("Y")) {
+			
 		System.out.println("Enter the number of products to be removed in sotck: ");
 		product.removeProducts(sc.nextInt());
+		}
 		
-		System.out.println();
+		System.out.println("Do you wish to add some product ? [Y-N]");		
+	    r = sc.next();
 		
-	    String p = sc.nextLine();
-		
-		r = p;
-		
-		
-		}while ( r.equalsIgnoreCase("s"));
+				
+		}while ( r.equalsIgnoreCase("y"));
 
 		sc.close();
 	}
