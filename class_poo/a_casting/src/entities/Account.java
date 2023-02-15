@@ -45,7 +45,13 @@ public class Account {
 	public void deposit(double amount) {
 		this.balance += amount;
 		
-		
 	}
+
+	@Override
+	public String toString() {
+		return "holder: " + holder + " " + "balance: " + balance;
+	}
+	
+	
 
 }
